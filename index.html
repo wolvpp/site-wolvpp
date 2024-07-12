@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupas - Link na Bio</title>
+    <!-- Adicionando o Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Adicionando o Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Estilos Globais */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212; /* Fundo escuro */
+            color: white; /* Texto branco */
+            margin: 0;
+            padding: 0; /* Remove o padding */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+            overflow: auto; /* Permite rolagem na tela */
+        }
+
+        .container {
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            background-color: #1e1e1e; /* Fundo ligeiramente mais claro para o contêiner */
+            margin-top: 10px; /* Espaço superior para evitar o corte do topo */
+            margin-bottom: 20px; /* Espaço inferior para evitar o corte do fundo */
+        }
+
+        .logo img {
+            width: 180px; /* Aumenta o tamanho do logo */
+            margin-bottom: 10px; /* Menos espaço abaixo do logo */
+        }
+
+        h2 {
+            font-size: 24px; /* Aumenta o tamanho do título */
+            margin: 10px 0; /* Espaço superior e inferior */
+        }
+
+        p {
+            font-size: 16px; /* Ajusta o tamanho da fonte do texto */
+            line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+            margin: 10px 0; /* Espaço superior e inferior */
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column; /* Coloca os botões um embaixo do outro */
+            gap: 15px; /* Aumenta o espaçamento entre os botões */
+            margin-bottom: 20px;
+        }
+
+        .button {
+            padding: 14px 0; /* Aumenta o espaço interno vertical */
+            border: 2px solid white; /* Contorno branco */
+            border-radius: 30px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background: linear-gradient(45deg, #0a32b5, #fcc222);
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+            font-size: 18px; /* Aumenta o tamanho da fonte */
+        }
+
+        .button:hover {
+            background: linear-gradient(45deg, #ffc219, #ff1929);
+            transform: scale(1.05); /* Leve aumento no tamanho do botão ao passar o mouse */
+        }
+
+        .photos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px; /* Aumenta o espaçamento entre as fotos */
+            margin-bottom: 20px; /* Espaço abaixo das fotos */
+        }
+
+        .photos img {
+            max-width: 100%; /* Fotos se ajustam ao tamanho do contêiner */
+            height: auto; /* Mantém a proporção das fotos */
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .photos img:hover {
+            transform: scale(1.1);
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center; /* Centraliza os ícones */
+            gap: 15px; /* Espaçamento entre os ícones */
+            margin-top: 20px; /* Espaço acima dos ícones de redes sociais */
+        }
+
+        .social-button {
+            width: 50px; /* Largura dos ícones */
+            height: 50px; /* Altura dos ícones */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white; /* Cor do ícone */
+            background-color: #333; /* Cor de fundo padrão dos ícones */
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+            font-size: 24px; /* Tamanho dos ícones */
+        }
+
+        .social-button i {
+            margin: 0; /* Remove a margem dos ícones */
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #C13584, #E1306C); /* Gradiente para Instagram */
+        }
+
+        .facebook {
+            background: linear-gradient(45deg, #3b5998, #8b9dc3); /* Gradiente para Facebook */
+        }
+
+        .youtube {
+            background: linear-gradient(45deg, #FF0000, #CC0000); /* Gradiente para YouTube */
+        }
+
+        .threads {
+            background: linear-gradient(45deg, #000000, #6D6E71); /* Gradiente para Threads */
+        }
+
+        .social-button:hover {
+            background: #555; /* Cor de fundo ao passar o mouse */
+            transform: scale(1.1); /* Leve aumento no tamanho do botão ao passar o mouse */
+        }
+
+        @media (min-width: 600px) {
+            .photos {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .photos img {
+                width: 180px; /* Aumenta o tamanho das fotos em telas maiores */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://i.ibb.co/bzSrWcX/WOLVpp-Logotipo.png" alt="WolvPP">
+            <h2>Wolv Produtos Personalizados</h2>
+            </br>
+            <p>✨👕 Torne-se Único com as Camisetas Personalizadas Wolv 👕✨</p>
+            <p>⭐ Estamparia de Alta qualidade com Camisetas Personalizadas, Mouse Pads e Diversos Produtos com Vários Temas!!!</p>
+            </br>
+        </div>
+        <div class="buttons">
+            <a href="https://www.elo7.com.br/wolvpersonalizados" class="button"><i class="fas fa-cart-shopping"></i> Elo7</a>
+            <a href="https://shopee.com.br/wolvreturns" class="button"><i class="fas fa-cart-shopping"></i> Shopee</a>
+        </div>
+        <div class="photos">
+            <img src="https://img.elo7.com.br/product/685x685/494C3E0/camiseta-stumble-guys-game-sublimacao.jpg" alt="Camiseta 1">
+            <img src="https://img.elo7.com.br/product/685x685/46A402E/camiseta-infantil-super-mario-bros-filme-vermelho.jpg" alt="Camiseta 2">
+            <img src="https://img.elo7.com.br/product/685x685/50D47CF/camiseta-infantil-divertidamente-2-infantil.jpg" alt="Camiseta 3">
+            <img src="https://img.elo7.com.br/product/685x685/357EBC1/mouse-pad-gamer-sonic-tam-44x25cm-sonic.jpg" alt="MousePag Gamer 1">
+            <img src="https://img.elo7.com.br/product/685x685/35943CF/mouse-pad-gamer-star-wars-tam-44x25cm-game.jpg" alt="MousePag Gamer 2">
+            <img src="https://img.elo7.com.br/product/685x685/2A29192/camiseta-adulto-bruno-mars-show-tour-2017-2017.jpg" alt="Camiseta 4">
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/wolvpp/" target="_blank" class="social-button instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/wolvpp/" target="_blank" class="social-button facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/@wolvpp" target="_blank" class="social-button youtube" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.threads.net/@wolvpp" target="_blank" class="social-button threads" aria-label="Threads">
+                <i class="fab fa-threads"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Adicionando o Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
