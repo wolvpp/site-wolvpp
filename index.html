@@ -62,12 +62,19 @@
             padding: 14px 0; /* Aumenta o espaço interno vertical */
             border: 2px solid white; /* Contorno branco */
             border-radius: 30px;
-            text-decoration: none;
-            color: white;
+            text-decoration: none; /* Remove o sublinhado */
+            color: white; /* Define a cor do texto como branco */
             font-weight: bold;
             background: linear-gradient(45deg, #0a32b5, #fcc222);
             transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
             font-size: 18px; /* Aumenta o tamanho da fonte */
+        }
+
+        .button:visited,
+        .button:link,
+        .button:active {
+            color: white; /* Define a cor do texto como branco */
+            text-decoration: none; /* Remove o sublinhado */
         }
 
         .button:hover {
@@ -112,6 +119,14 @@
             background-color: #333; /* Cor de fundo padrão dos ícones */
             transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
             font-size: 24px; /* Tamanho dos ícones */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+
+        .social-button:visited,
+        .social-button:link,
+        .social-button:active {
+            color: white; /* Define a cor do texto como branco */
+            text-decoration: none; /* Remove o sublinhado */
         }
 
         .social-button i {
