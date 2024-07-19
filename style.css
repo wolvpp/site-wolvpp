@@ -154,3 +154,18 @@
                 width: 180px; /* Aumenta o tamanho das fotos em telas maiores */
             }
         }
+        
+        /* Estilo para o botão de fechar da AlertBox */
+        .alert .btn-close {
+            position: absolute; /* Torna o botão de fechar posicionado absoluto */
+            top: 5px; /* Alinha ao topo da caixa de alerta */
+            right: 15px; /* Alinha à direita da caixa de alerta */
+            color: #c0a96c; /* Cor do ícone do botão de fechar */
+            background: none; /* Remove qualquer fundo do botão */
+            border: none; /* Remove qualquer borda do botão */
+            font-size: 1.59rem; /* Aumenta o tamanho do ícone para melhor visibilidade */
+        }
+
+        .alert {
+            position: relative; /* Necessário para que o botão de fechar seja posicionado relativo à caixa de alerta */
+        }
