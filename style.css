@@ -169,3 +169,11 @@
         .alert {
             position: relative; /* Necessário para que o botão de fechar seja posicionado relativo à caixa de alerta */
         }
+
+        .unload-warning {
+            color: #ffcc00;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 15px;
+        }
+
