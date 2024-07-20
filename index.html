@@ -186,13 +186,21 @@
         .alert {
             position: relative; /* Necessário para que o botão de fechar seja posicionado relativo à caixa de alerta */
         }
+
+        .unload-warning {
+            color: #ffcc00;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 15px;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <!-- AlertBox -->
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong><i class="bi bi-whatsapp"></i> WhatsApp do Wolv!!!</strong> Tem Alguma Dúvida??? <a href="https://wa.me/5511996457270" target="_blank">Fale Conosco <i class="bi bi-box-arrow-up-right"></i></a>
+            <strong><i class="bi bi-whatsapp"></i> WhatsApp do Wolv!</strong> Tem Alguma Dúvida??? <a href="https://wa.me/5511996457270" target="_blank">Fale Conosco <i class="bi bi-box-arrow-up-right"></i></a>
             <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -202,9 +210,10 @@
         <div class="logo">
             <img src="https://i.ibb.co/bzSrWcX/WOLVpp-Logotipo.png" alt="WolvPP">
             <h2>Wolv Produtos Personalizados</h2>
-            <br>
-            <p>✨👕 Torne-se Único com as Camisetas Personalizadas Wolv 👕✨</p>
-            <p>⭐ Estamparia de Alta qualidade com Camisetas Personalizadas, Mouse Pads e Diversos Produtos com Vários Temas!!!</p>
+            <p>
+                <i class="fas fa-shipping-fast"></i> Entrega para Todo o Brasil!
+            </p>
+            <p>⭐ Estamparia de Alta qualidade com Camisetas Personalizadas, Mouse Pads e Diversos Produtos com Vários Temas! 👕</p>
             <br>
         </div>
         
@@ -236,6 +245,10 @@
                 <i class="fab fa-threads"></i>
             </a>
         </div>
+
+        <div class="unload-warning">
+            ⚠️ Não saia da página para não perder informações importantes!
+        </div>
     </div>
 
     <!-- Adicionando o Bootstrap JS e dependências -->
@@ -243,15 +256,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- Impedir Fechar Guia -->
-<script>
-    window.onbeforeunload = function(event) {
-        const message = "Quer realmente sair do site?";
-        event.returnValue = message;
-        return message;
-    };
+    <!-- Impedir Fechar Guia -->
+    <script>
+        window.onbeforeunload = function(event) {
+            const message = "Quer realmente sair do site?";
+            event.returnValue = message; // Para navegadores modernos
+            return message; // Para navegadores mais antigos
+        };
     </script>
     <!-- End Impedir Fechar Guia -->
-
 </body>
 </html>
